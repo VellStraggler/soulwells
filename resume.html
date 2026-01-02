@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>David A. Wells – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #4b5563;
+      --accent: #2563eb;
+      --light: #f9fafb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--primary);
+      background-color: var(--light);
+      line-height: 1.5;
+    }
+
+    .resume {
+      max-width: 8.5in;
+      max-height:11in;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px;
+    }
+
+    /* Header */
+    .header {
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .contact {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: var(--secondary);
+    }
+
+    .contact span {
+      margin-right: 16px;
+      white-space: nowrap;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Two-column layout */
+    .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 32px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    section h2 {
+      margin: 0 0 0px 0;
+      font-size: 1.25rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0px;
+    }
+
+    h3 {
+      margin: 0px 0 0px 0;
+      font-size: 1.05rem;
+    }
+
+    .subheading {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin: 0px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0px;
+    }
+
+    Skills
+    .skills p {
+      margin: 0px;
+    }
+
+    /* Experience items */
+    .job {
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-weight: 600;
+    }
+
+    .job-meta {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Footer spacing for print */
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+      }
+
+      .resume {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="resume">
+      <!-- Header -->
+      <div class="header">
+        <h1>David A. Wells</h1>
+        <div class="contact">
+          <span>Pleasant Grove, UT 84062</span>
+          <span>(206) 946-2879</span>
+          <span>
+            <a href="mailto:david@incwells.com">david@incwells.com</a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/david-aaron-wells/">LinkedIn</a>
+          </span>
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="content">
+        <!-- Left Column -->
+        <div>
+          <section>
+            <h2>Education</h2>
+            <div class="job-header">
+              <h3>Brigham Young University – Idaho</h3>
+              <div class="job-meta">Sept. 2020 – Dec. 2025</div>
+            </div>
+            <div class="subheading">
+              Bachelor's Degree in Computer Science · GPA: 3.23
+            </div>
+            <ul>
+              <li>
+                <strong>Senior Project – <a href="https://www.youtube.com/watch?v=cRJ2EqHhD7Q">Physics-Based Music Visualizer</a>:</strong>
+                One-click audio-to-video generator with real-time playback.
+                Written in C++ using GLFW and supporting libraries.
+              </li>
+              <li>
+                <strong>Team Leader – Pie Agenda App:</strong>
+                Led a team of 8 in building an app for Android/iOS/Windows.
+                Written in Dart using Flutter.
+              </li>
+              <li>
+                <a href="https://github.com/elinorewickard/cse_final_project"><strong>Team Leader – Game: Wall of Fire:</strong></a>
+                Led a team of 3 to create a 3D side-scroller in Python.
+                Ranked 1st for best graphics.
+              </li>
+              <li>
+                <strong>Academic Highlight:</strong>
+                Improved GPA with 20-credit load in final semester.
+              </li>
+            </ul>
+            <div class="job-header">
+              <h3>Bloom Institute of Technology</h3>
+              <div class="job-meta">Sept. 2020 – Dec. 2025</div>
+            </div>
+            <div class="subheading">
+              Certification in AWS Backend Development
+            </div>
+            <ul>
+              <li>
+                <strong>Senior Project – ASCII-to-Image Markdown Renderer:</strong>
+                Backend built with AWS and Java; frontend in JS.
+                Focused on stress management and long-term perseverance.
+              </li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>Experience</h2>
+            
+            <div class="job">
+              <div class="job-header">
+                <div class="job-title">Web Developer Intern, Degasolutions LLC</div>
+                <div class="job-meta">June 2025 – Dec. 2025</div>
+              </div>
+              <ul>
+                <li>Developed 90% of the UI for an Android/Desktop application using C#, MAUI, and MudBlazor.</li>
+              </ul>
+            </div>
+            
+            <div class="job">
+              <div class="job-header">
+                <div class="job-title">Freelance Full Stack Website Contractor</div>
+                <div class="job-meta">Oct. 2024 – Present</div>
+              </div>
+              <ul>
+                <li>Created websites for 
+                  <a href="https://edefying.com">Edefying</a>, 
+                  <a href="https://vellstraggler.github.io/TDL-site/">TDL Industrial</a>, and 
+                  <a href="https://daraluci.weebly.com/">Dara Luci</a>. 
+                  Adapted to client-specific tools like Elementor and Weebly. 100% client satisfaction.</li>
+              </ul>
+            </div>
+            
+            <div class="job">
+              <div class="job-header">
+                <div class="job-title">AI Tester, Outlier</div>
+                <div class="job-meta">Oct. 2023 – Aug. 2024</div>
+              </div>
+              <ul>
+                <li>Authored coding prompts and solutions to train AI models.</li>
+              </ul>
+            </div>
+            
+            <div class="job">
+              <div class="job-header">
+                <div class="job-title">Additional Experience</div>
+                <div class="job-meta">Feb. 2021 – Nov. 2024</div>
+              </div>
+              <ul>
+                <li>Delivery Driver, FedEx – Performed faster than 90% of workforce.</li>
+                <li>Cold Call Agent, Credit.com – “Agent of the Week” Award</li>
+                <li>Eagle Scout Award: Oct. 2019.</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        
+        <!-- Right Column -->
+        <div>
+          <section class="skills">
+            <h2>Skillset Overview</h2>
+            <p><strong>Languages:</strong> Java, Python, C#, C++, JS, Dart, SQL, HTML, CSS, and Kotlin.</p>
+            <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, NiceGUI.</p>
+            <p><strong>Skills:</strong> Leadership, independence, algorithmic problem-solving, debugging, and optimizing time-use and code.</p>
+          </section>
+          
+          <section>
+            <h2>Personal Projects</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/VellStraggler/text-game-engine"><strong>Text Art Game Engine:</strong></a>
+                Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design,
+                dictionaries, map chunking, collision detection, and more.
+                2,600 lines of Python running at 1,000 FPS in terminal.
+              </li>
+              <li>
+                <a href="https://github.com/VellStraggler/MinecraftBot"><strong>Minecraft AI Bot:</strong></a>
+                Automates gameplay using video input.
+                Written in Java and prototyped in Python with image-to-text processing.
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=TpZ2NpVWoKY"><strong>3D Voxel Simulation:</strong></a>
+                Python with TKinter, asynchronous input, and algorithmic texturing 
+              </li>
+              <li>
+                <a href="https://github.com/VellStraggler/midi-art"><strong>MIDI Piano Live Visualizer:</strong></a>
+                Real-time MIDI-input painter written in 10 hours.
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+  
