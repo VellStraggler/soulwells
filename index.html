@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <title>David A. Wells – Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- React + ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>David A. Wells</h1>
-        <a href="resume.html">Resume</a>
-        <a href="websites.html">Websites</a>
-        <a href="mobile.html">Mobile Apps</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="contact.html">Contact</a>
-    </header>
+  <div id="root"></div>
+  <script type="text/babel" src="components.js"></script>
+  <script type="text/babel" src="main.js"></script>
 </body>
+</html>

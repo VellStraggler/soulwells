@@ -1,3 +1,13 @@
+function ResumePage() {
+  return (
+    <div className="page">
+      <Header />
+      <Resume />
+      <Footer />
+    </div>
+  );
+}
+
 function Job({title, meta, descriptions}) {
   return (
     <div className="job">
@@ -26,10 +36,12 @@ function SchoolProject({name, link, linkName, description}) {
     }
     return (
         <li>
-            <a className="title">{name}<a href={link}>{linkName}</a></a>:{" "}
+            <span className="title">{name}</span>
+              <a href={link}>{linkName}</a>:{" "}
             {description}
         </li>
     );}
+
 
 function Resume() {
   return (
@@ -68,14 +80,11 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project –" link="https://www.youtube.com/watch?v=cRJ2EqHhD7Q" linkName="Physics-Based Music Visualizer"
-                    description="One-click audio-to-video generator with real-time playback.
-                    Written in C++ using GLFW and supporting libraries."/>
+                    description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and supporting libraries."/>
                 <SchoolProject name="Team Leader – Pie Agenda App"
-                    description="Led a team of 8 in building an app for Android/iOS/Windows.
-                    Written in Dart using Flutter."/>
+                    description="Led a team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
                 <SchoolProject link="https://github.com/elinorewickard/cse_final_project"
-                    linkName="Team Leader – Game: Wall of Fire" description="Led a team of 3 to create a 3D side-scroller in Python.
-                    Ranked 1st for best graphics."/>
+                    linkName="Team Leader – Game: Wall of Fire" description="Led a team of 3 to create a 3D side-scroller in Python. Ranked 1st for best graphics."/>
                 <SchoolProject name="Academic Highlight" description="Improved GPA with 20-credit load in final semester."/>
               </ul>
               <div className="job-header">
@@ -87,8 +96,7 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project – ASCII-to-Image Markdown Renderer"
-                    description="Backend built with AWS and Java; frontend in JS.
-                    Focused on stress management and long-term perseverance."/>
+                    description="Backend built with AWS and Java; frontend in JS. Focused on stress management and long-term perseverance."/>
               </ul>
             </section>
             
@@ -116,9 +124,7 @@ function Resume() {
                    descriptions={["Authored coding prompts and solutions to train AI models."]} />
               <Job title="Additional Experience"
                    meta="Feb. 2021 – Nov. 2024"
-                   descriptions={["Delivery Driver, FedEx – Performed faster than 90% of workforce.",
-                   "Cold Call Agent, Credit.com – “Agent of the Week” Award",
-                   "Eagle Scout Award: Oct. 2019."]}/>
+                   descriptions={["Delivery Driver, FedEx – Performed faster than 90% of workforce.", "Cold Call Agent, Credit.com – “Agent of the Week” Award", "Eagle Scout Award: Oct. 2019."]}/>
             </section>
           </div>
           
@@ -135,8 +141,7 @@ function Resume() {
               <h2>Personal Projects</h2>
               <ul>
                 <Project name="Text Art Game Engine" link="https://github.com/VellStraggler/text-game-engine"
-                    description="Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design, dictionaries, map chunking,
-                    collision detection, and more. 2,600 lines of Python running at 1,000 FPS in terminal."/>
+                    description="Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design, dictionaries, map chunking, collision detection, and more. 2,600 lines of Python running at 1,000 FPS in terminal."/>
                 <Project name="Minecraft AI Bot" link="https://github.com/VellStraggler/MinecraftBot"
                     description="Automates gameplay using video input. Written in Java and prototyped in Python with image-to-text processing."/>
                 <Project name="3D Voxel Simulation" link="https://www.youtube.com/watch?v=TpZ2NpVWoKY"
@@ -153,4 +158,4 @@ function Resume() {
 
 // Mount to DOM
 ReactDOM.createRoot(document.getElementById("root"))
-    .render(<Resume />);
+    .render(<ResumePage />);
