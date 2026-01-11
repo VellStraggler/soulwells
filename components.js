@@ -35,3 +35,36 @@ function Footer() {
         </footer>
     );
 }
+
+function PortfolioEntry({title, description, imgSrc, link}) {
+    return (
+        <div className="portfolio-entry">
+            <div>
+                <div className="portfolio-text">
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                </div>
+            </div>
+            <a href={link} className="entry-img-button">
+                <img className="entry-img" src={imgSrc}></img>
+            </a>
+        </div>
+
+    );
+}
+function PortfolioEntry2({title, description, imgSrc, link}) {
+    return (
+        <div className="portfolio-entry2">
+            <a href={link} className="entry-img-button">
+                <img className="entry-img" src={imgSrc}></img>
+            </a>
+            <div>
+                <div className="portfolio-text">
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                </div>
+            </div>
+        </div>
+
+    );
+}
