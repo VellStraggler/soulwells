@@ -63,6 +63,9 @@ header {
     text-align: center;
 
 }
+.view-raw {
+    justify-self: right;
+}
 
 .contents, .resume {
     flex:1;
@@ -77,11 +80,35 @@ header {
     border-radius: 8px;
     padding: 32px;
 }
+.resume-download {
+    width:auto;
+    display:flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    background-color: var(--light);
+    position: absolute;
+    justify-self: right;
+    width: 130px;
+    height:130px;
+    margin:-38px;
+    border-radius:8px;
+    /*x -y, each */
+    clip-path: polygon(0% 0%, 100% 100%, 100% 0);
+}
+.resume-download:hover {
+    width:150px;
+    height:150px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    transition: 0.5s;
+
+}
 
 /* Header */
 .header {
     margin-bottom: 12px;
-    border-bottom: 2px solid var(--border);
     padding-bottom: 8px;
 }
 

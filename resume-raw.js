@@ -1,13 +1,3 @@
-function ResumePage() {
-  return (
-    <div className="page">
-      <Header />
-      <Resume />
-      <Footer />
-    </div>
-  );
-}
-
 function Job({title, meta, descriptions}) {
   return (
     <div className="job">
@@ -42,10 +32,17 @@ function SchoolProject({name, link, linkName, description}) {
         </li>
     );}
 
+function ResumeRaw() {
+  return (
+    <div className="resume">
+      <Resume />
+    </div>
+  )
+}
 
 function Resume() {
   return (
-    <div className="resume">
+      <div>
         {/* <!-- Header --> */}
         <div className="header">
           <h1>David A. Wells</h1>
@@ -158,4 +155,4 @@ function Resume() {
 
 // Mount to DOM
 ReactDOM.createRoot(document.getElementById("root"))
-    .render(<ResumePage />);
+    .render(<ResumeRaw />);
