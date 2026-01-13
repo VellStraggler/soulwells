@@ -3,7 +3,7 @@ const links = [
     { href: "websites.html", label: "Websites" },
     { href: "mobile-apps.html", label: "Mobile Apps" },
     { href: "index.html", label: "Timeline" },
-    { href: "index.html", label: "Contact" },
+    { href: "contact.html", label: "Contact" },
 ];
 
 function Header() {

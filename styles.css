@@ -1,7 +1,7 @@
 :root {
     --primary: #1A1488;
     --secondary: #FFFFFF;
-    --accent: #0E6153;
+    --accent: #6e2fc1;
     --light: #2596C0;
     --border: #0c0944;
 }
@@ -210,6 +210,89 @@ h3 {
 
 }
 
+.form-section {
+    width: 66%;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    gap:8px;
+    font-size:110%;
+    padding:32px;
+    border-radius: 16px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: 600;
+}
+.form-section div, .email-section, .message-section{
+    width: 100%;
+    display:flex;
+    justify-content: left;
+}
+.form-section textarea, .form-section input {
+    padding:8px;
+    font-size: 1.4rem;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    width: 100%;
+    
+}
+.form-section button {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding:8px 16px 8px 16px;
+    margin-top:16px;
+    border-radius:16px;
+    background-color: var(--light);
+    color: var(--secondary);
+    display:inline-flex;
+    align-items: center;
+    width:100%;
+    transition:0.5s;
+    gap:0%;
+}
+.expanding-dots {
+    transition:0.5s;
+    display:inline-flex;
+    width:24px;
+}
+button:hover  {
+    transition:0.5s;
+    gap:6%;
+}
+.expanding-dots span {
+    opacity: 0;
+    padding-left:46%;
+    padding-right:46%;
+    transition: ease-in .4s;
+    transition: ease-out .5s; 
+    font-size: 10%;
+}
+.expanding-dots span:nth-child(1) { transition-delay: ease-in 0.00s; }
+.expanding-dots span:nth-child(1) { transition-delay: ease-out 0.15s; }
+.expanding-dots span:nth-child(2) { transition-delay: ease-in 0.1s; }
+.expanding-dots span:nth-child(2) { transition-delay: ease-out 0.1s; }
+.expanding-dots span:nth-child(3) { transition-delay: ease-in 0.20s; }
+.expanding-dots span:nth-child(3) { transition-delay: ease-out 0.05s; }
+.expanding-dots span:nth-child(4) { transition-delay: ease-in 0.3s; }
+.expanding-dots span:nth-child(4) { transition-delay: ease-out 0.0s; }
+
+button:hover .expanding-dots span {
+    padding-left:100%;
+    padding-right:100%;
+    transition:0.5s;
+    opacity: 1;
+    font-size: 100%;
+}
+
+button:hover img{
+    transition:0.5s;
+    padding-left:55%;
+}
+button img{
+    transition:0.5s;
+}
+
+
 ul {
     margin: 0 0 0 20px;
     padding: 0;
@@ -314,5 +397,8 @@ li {
     }
     .entry-img-button {
         width:100%;
+    }
+    .form-section {
+        width: 100%;
     }
 }
