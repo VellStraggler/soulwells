@@ -138,7 +138,7 @@ function Resume() {
               <h2>Personal Projects</h2>
               <ul>
                 <Project name="Text Art Game Engine" link="https://github.com/VellStraggler/text-game-engine"
-                    description="Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design, dictionaries, map chunking, collision detection, and more. 2,600 lines of Python running at 1,000 FPS in terminal."/>
+                    description="Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design, dictionaries, map chunking, collision detection, and more. 3,000 lines of Python running at 1,000 FPS in terminal."/>
                 <Project name="Minecraft AI Bot" link="https://github.com/VellStraggler/MinecraftBot"
                     description="Automates gameplay using video input. Written in Java and prototyped in Python with image-to-text processing."/>
                 <Project name="3D Voxel Simulation" link="https://www.youtube.com/watch?v=TpZ2NpVWoKY"
