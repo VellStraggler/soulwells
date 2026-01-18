@@ -2,7 +2,7 @@ const links = [
     { href: "resume-page.html", label: "Resume" },
     { href: "websites.html", label: "Websites" },
     { href: "mobile-apps.html", label: "Mobile Apps" },
-    { href: "index.html", label: "Timeline" },
+    { href: "timeline.html", label: "Timeline" },
     { href: "contact.html", label: "Contact" },
 ];
 

@@ -2,10 +2,12 @@ function ResumePage() {
   return (
     <div className="page">
         <Header />
-        <div className="resume">
-            <ResumeDownload link="resume.pdf" />
-            <Resume />
-            <ViewRaw />
+        <div className="contents">
+          <div className="resume">
+              <ResumeDownload link="resume.pdf" />
+              <Resume />
+              <ViewRaw />
+          </div>
         </div>
         <Footer />
     </div>
