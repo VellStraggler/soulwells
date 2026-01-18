@@ -79,16 +79,27 @@ header {
     flex:1;
 }
 
-.resume, .card {
+.resume, .card, .welcome {
     max-width: 8.5in;
     margin: 0 auto;
+    padding: 32px;
     background: white;
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 32px;
 }
 .resume {
     max-height:11in;
+}
+
+.welcome img {
+    float:left;
+    width:300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 16px 16px 0;
+}
+.welcome-text {
+    overflow:hidden;
 }
 .resume-download {
     width:auto;
@@ -113,7 +124,6 @@ header {
     padding-left: 60px;
     padding-bottom: 60px;
     transition: 0.5s;
-
 }
 
 /* Header */
