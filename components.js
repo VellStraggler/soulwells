@@ -1,10 +1,10 @@
 const links = [
-    { href: "resume-page.html", label: "Resume" },
-    { href: "websites.html", label: "Websites" },
-    { href: "mobile-apps.html", label: "Mobile Apps" },
-    { href: "timeline.html", label: "Timeline" },
-    { href: "contact.html", label: "Contact" },
-    { href: "tetris.html", label: "Play Tetris"}
+    { href: "/resume-page.html", label: "Resume" },
+    { href: "/websites.html", label: "Websites" },
+    { href: "/mobile-apps.html", label: "Mobile Apps" },
+    { href: "/timeline.html", label: "Timeline" },
+    { href: "/tetris.html", label: "Play Tetris"},
+    { href: "/contact.html", label: "Contact" }
 ];
 
 function Header() {
