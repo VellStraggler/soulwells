@@ -265,6 +265,11 @@ h3 {
     display:inline-flex;
     width:24px;
 }
+.nice-button {
+    font-size: 1.1em;
+    border-radius: 16px;
+    margin: 8px;
+}
 button:hover  {
     transition:0.5s;
     gap:6%;
