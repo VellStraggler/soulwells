@@ -4,7 +4,7 @@ const links = [
     { href: "mobile-apps.html", label: "Mobile Apps" },
     { href: "timeline.html", label: "Timeline" },
     { href: "contact.html", label: "Contact" },
-    { href: "/javascript-tetris/index.html", label: "Play Tetris"}
+    { href: "tetris.html", label: "Play Tetris"}
 ];
 
 function Header() {
