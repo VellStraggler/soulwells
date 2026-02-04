@@ -142,6 +142,8 @@ header {
     margin-top: 8px;
     font-size: 0.95rem;
     color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact span {
@@ -178,7 +180,7 @@ h3 {
 
 .subheading {
     font-size: 0.9rem;
-    color: var(--secondary);
+    color: var(--light);
     margin-bottom: 8px;
 }
 .portfolio-entry, .portfolio-entry2 {
@@ -333,7 +335,7 @@ li {
 
 .job-meta {
     font-size: 0.9rem;
-    color: var(--secondary);
+    color: var(--light);
 }
 
 .job-header {
@@ -484,7 +486,6 @@ li {
         padding-left: 60px;
         padding-bottom: 60px;
         transition: 0.5s;
-
     }
     .content {
         display:flex;

@@ -48,7 +48,7 @@ function Resume() {
           <h1>David A. Wells</h1>
           <div className="contact">
             <span>
-                <a href="https://maps.app.goo.gl/G8GZF1Nj1rt8tvKXA">Pleasant Grove, UT 84062</a>
+                <a href="https://maps.app.goo.gl/G8GZF1Nj1rt8tvKXA">Pleasant Grove, UT</a>
             </span>
             <span>
                 <a href="tel:+12069462879">(206) 946-2879</a>
@@ -58,6 +58,9 @@ function Resume() {
             </span>
             <span>
               <a href="https://www.linkedin.com/in/david-aaron-wells/">LinkedIn</a>
+            </span>
+            <span>
+              <a href="https://soulwells.us/"><div className="title">Portfolio Site ☆</div></a>
             </span>
           </div>
         </div>
@@ -77,12 +80,12 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project –" link="https://www.youtube.com/watch?v=cRJ2EqHhD7Q" linkName="Physics-Based Music Visualizer"
-                    description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and supporting libraries."/>
+                    description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and OpenGL."/>
                 <SchoolProject name="Team Leader – Pie Agenda App"
-                    description="Led a team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
+                    description="Led team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
                 <SchoolProject link="https://github.com/elinorewickard/cse_final_project"
-                    linkName="Team Leader – Game: Wall of Fire" description="Led a team of 3 to create a 3D side-scroller in Python. Ranked 1st for best graphics."/>
-                <SchoolProject name="Academic Highlight" description="Improved GPA with 20-credit load in final semester."/>
+                    linkName="Team Leader – Game: Wall of Fire" description="Led team of 3 to create a 3D side-scroller in Python. Ranked #1 for best graphics."/>
+                <SchoolProject name="Academic Highlight" description="Improved GPA while taking 20 credits."/>
               </ul>
               <div className="job-header">
                 <h3>Bloom Institute of Technology</h3>
@@ -93,29 +96,33 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project – ASCII-to-Image Markdown Renderer"
-                    description="Backend built with AWS and Java; frontend in JS. Focused on stress management and long-term perseverance."/>
+                    description="AWS Lambda calls in Java for DDB uploads; frontend in JS."/>
               </ul>
             </section>
             
             <section>
               <h2>Experience</h2>
               
-              <Job title="Web Developer Intern, Degasolutions LLC"
-                   meta="June 2025 – Dec. 2025"
-                   descriptions={["Developed 90% of the UI for an Android/Desktop application using C#, MAUI, and MudBlazor."]} />
               <div className="job">
                 <div className="job-header">
-                  <div className="title">Freelance Full Stack Website Contractor</div>
+                  <div className="title">Freelance Full Stack Website Contractor ☆</div>
                   <div className="job-meta">Oct. 2024 – Present</div>
                 </div>
                 <ul>
                   <li>Created websites for{" "}
+                    <a href="https://vellstraggler.github.io/Scripture-Creations">Scripture Creations</a>,{" "}
                     <a href="https://edefying.com">Edefying</a>,{" "}
-                    <a href="https://tdl-construction.soulwells.us">TDL Industrial</a>, and{" "}
+                    <a href="https://tdl-construction.soulwells.us">TDL</a>, and{" "}
                     <a href="https://daraluci.weebly.com/">Dara Luci</a>.
-                    Adapted to client-specific tools like Elementor and Weebly. 100% client satisfaction.</li>
+                    Used React, Elementor, or Weebly.</li>
                 </ul>
               </div>
+              <Job title="Participant, IBM Hackathon"
+                   meta="Feb. 2026"
+                   descriptions={["Introduced to creating a workforce of agentic AI"]} />
+              <Job title="Web Dev Intern, Degasolutions LLC"
+                   meta="June 2025 – Dec. 2025"
+                   descriptions={["Developed 90% of UI for an Android/Desktop app using C#, MAUI, and MudBlazor."]} />
               <Job title="AI Tester, Outlier"
                    meta="Oct. 2023 – Aug. 2024"
                    descriptions={["Authored coding prompts and solutions to train AI models."]} />
@@ -137,8 +144,8 @@ function Resume() {
             <section>
               <h2>Personal Projects</h2>
               <ul>
-                <Project name="Text Art Game Engine" link="https://github.com/VellStraggler/text-game-engine"
-                    description="Use of Linked Lists, Hashmaps, OOP principles, file I/O, UX design, dictionaries, map chunking, collision detection, and more. 3,000 lines of Python running at 1,000 FPS in terminal."/>
+                <Project name="Custom Text Art Game Engine" link="https://github.com/VellStraggler/text-game-engine"
+                    description="Use of OOP principles, file I/O, UX design, built-in map chunking, collision detection, etc. 3,000 lines of Python running at 1,000 FPS."/>
                 <Project name="Minecraft AI Bot" link="https://github.com/VellStraggler/MinecraftBot"
                     description="Automates gameplay using video input. Written in Java and prototyped in Python with image-to-text processing."/>
                 <Project name="3D Voxel Simulation" link="https://www.youtube.com/watch?v=TpZ2NpVWoKY"
