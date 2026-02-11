@@ -81,10 +81,10 @@ function Resume() {
               <ul>
                 <SchoolProject name="Senior Project –" link="https://www.youtube.com/watch?v=cRJ2EqHhD7Q" linkName="Physics-Based Music Visualizer"
                     description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and OpenGL."/>
-                <SchoolProject name="Team Leader – Pie Agenda App"
+                <SchoolProject name="Team Leader –"linkName="Pie Agenda App" link="https://www.youtube.com/shorts/VlO8CpeSnMk"
                     description="Led team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
                 <SchoolProject link="https://github.com/elinorewickard/cse_final_project"
-                    linkName="Team Leader – Game: Wall of Fire" description="Led team of 3 to create a 3D side-scroller in Python. Ranked #1 for best graphics."/>
+                    name="Team Leader –" linkName="Game: Wall of Fire" description="Led team of 3 to create a 3D side-scroller in Python. Ranked #1 for best graphics."/>
                 <SchoolProject name="Academic Highlight" description="Improved GPA while taking 20 credits."/>
               </ul>
               <div className="job-header">
@@ -137,7 +137,7 @@ function Resume() {
             <section className="skills">
               <h2>Skillset Overview</h2>
               <p><strong>Languages:</strong> Java, Python, C#, C++, JS, Dart, SQL, HTML, CSS, and Kotlin.</p>
-              <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, NiceGUI.</p>
+              <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, AWS Lambda, and AWS API Gateway.</p>
               <p><strong>Skills:</strong> Leadership, independence, algorithmic problem-solving, debugging, and optimizing time-use and code.</p>
             </section>
             
