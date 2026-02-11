@@ -8,9 +8,9 @@ const links = [
 ];
 
 function Header() {
-    const currentPage = window.location.pathname
-        .split("/")
-        .pop() || "index.html";
+    const currentPage = window.location.pathname;
+    
+    console.log("currentPage:", currentPage);
 
     return (
         <header>
@@ -37,34 +37,56 @@ function Footer() {
     );
 }
 
-function PortfolioEntry({title, description, imgSrc, link}) {
+function PortfolioEntryText({title, description, link, github=null, isVideo=false}) {
+    const linkText = isVideo ? "YouTube" : "Site";
+    let githubCode = null;
+    if (github != null) {
+        githubCode = <a href={github}>
+                        Github Link
+                    </a>;
+    }
     return (
-        <div className="portfolio-entry">
-            <div>
-                <div className="portfolio-text">
-                    <h1>{title}</h1>
-                    <p>{description}</p>
+        <div>
+            <div className="portfolio-text">
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <div className="centered-row">
+                    {githubCode}
+                    <a href={link}>
+                        {linkText} Link
+                    </a>
                 </div>
             </div>
-            <a href={link} className="entry-img-button">
-                <img className="entry-img" src={imgSrc}></img>
-            </a>
+        </div>
+    );
+}
+
+function IFrame({link}) {
+    return (
+        <iframe src={link} width="500px" height="500px"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share" allowFullScreen/>
+    );
+}
+
+function PortfolioEntry({title, description, imgSrc, link=null, github=null, isVideo=false}) {
+    return (
+        <div className="portfolio-entry">
+            <PortfolioEntryText title={title} description={description}
+                link={link} github={github} isVideo={isVideo}/>
+            <IFrame link={link} />
         </div>
 
     );
 }
-function PortfolioEntry2({title, description, imgSrc, link}) {
+function PortfolioEntry2({title, description, imgSrc, link, github=null, isVideo=false}) {
     return (
         <div className="portfolio-entry2">
-            <a href={link} className="entry-img-button">
+            {/* <a href={link} className="entry-img-button">
                 <img className="entry-img" src={imgSrc}></img>
-            </a>
-            <div>
-                <div className="portfolio-text">
-                    <h1>{title}</h1>
-                    <p>{description}</p>
-                </div>
-            </div>
+            </a> */}
+            <IFrame link={link} />
+            <PortfolioEntryText title={title} description={description}
+                link={link} github={github} isVideo={isVideo}/>
         </div>
 
     );
