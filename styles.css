@@ -101,6 +101,9 @@ header {
     box-shadow: 0 0 64px 16px var(--primary);
     border-radius: 8px;
 }
+.card {
+    padding-bottom: 64px;
+}
 .resume {
     max-height:11in;
 }
@@ -209,9 +212,9 @@ h3 {
 .portfolio-entry2 .portfolio-text{
     text-align: left;
 }
-.portfolio-text {
-    /* max-width:300px; */
-}
+/* .portfolio-text {
+    max-width:300px;
+} */
 .portfolio-text h1 {
     max-width:100%;
     margin:0;
