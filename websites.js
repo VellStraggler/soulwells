@@ -18,7 +18,7 @@ function Websites() {
                 </div>
                 <ul>
                     <PortfolioEntry title="Scripture Creations E-Commerce Site" 
-                        description="This is a work in progress, scheduled to release February 16th, 2026. Made React with Vite, and converts a simple excel file for its product catalog. It's hosted on github and is planned to handle transactions using an optimized AWS Lambda function. Designed to be both affordable and fast."
+                        description="This is a work in progress, scheduled to release February 23th, 2026. Made React with Vite, and converts a simple excel file for its product catalog. It's hosted on github and is planned to handle transactions using an optimized AWS Lambda function. Designed to be both affordable and fast."
                         imgSrc="assets/scripture_preview.png" 
                         link="https://vellstraggler.github.io/Scripture-Creations/"
                         github="https://github.com/VellStraggler/Scripture-Creations"/>

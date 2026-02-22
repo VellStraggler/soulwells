@@ -1,5 +1,6 @@
 :root {
     --primary: #1A1488;
+    --primary-light: #1A1488;
     --secondary: #FFFFFF;
     --accent: #6e2fc1;
     --light: #2596C0;
@@ -27,23 +28,24 @@ body {
     padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--primary);
-    background-color: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 200px, var(--secondary), var(--primary) calc(100% - 200px));
     line-height: 1.5;
 }
 footer {
     text-align: right;
     padding-right: 16px;
-    margin-top: 32px;
+    margin-top: 24px;
+    box-shadow: 0 0 24px 24px var(--primary);
 }
 header, footer {
     background-color: var(--border);
     color: var(--secondary);
 }
 header {
-    padding: 16px 16px 0 16px;
+    box-shadow: 0 0 64px 64px var(--primary);
+    padding: 16px 16px 0px 16px;
     margin:0px;
     margin-bottom:32px;
-    height: 200px;
 }
 .header-links {
     justify-content: center;
@@ -51,7 +53,7 @@ header {
     flex-direction: row;
 }
 .hlink {
-    padding:0px 32px 0px 32px;
+    padding:26px 16px 0px 16px;
     margin:0;
     border-radius: 16px 16px 0 0;
     background-color: var(--border);
@@ -63,10 +65,13 @@ header {
     justify-content: center;
     align-items: center;
     height:48px;
+    text-align: center;
+    text-wrap: nowrap;
 }
 .hlink:hover, .hlink.active {
     font-size: 1.8rem;
     background-color: var(--primary);
+    padding: 16px 32px 0px 32px;
 }
 .hlink.active:hover {
     font-size: 2rem;
@@ -76,6 +81,7 @@ header {
     text-decoration: none;
     font-size: 3rem;
     text-align: center;
+    margin:0;
 
 }
 .view-raw {
@@ -92,6 +98,7 @@ header {
     padding: 32px;
     background: white;
     border: 1px solid var(--border);
+    box-shadow: 0 0 64px 16px var(--primary);
     border-radius: 8px;
 }
 .resume {
@@ -136,7 +143,7 @@ header {
 /* Header */
 .header {
     margin-bottom: 12px;
-    padding-bottom: 8px;
+    width:50%;
 }
 
 .header h1 {
@@ -188,21 +195,51 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:16px;
+    gap:32px;
+    max-height: 400px;
     
 }
-.portfolio-entry div, .portfolio-entry2 div{
+.portfolio-entry .portfolio-text, .portfolio-entry2 .portfolio-text{
     width:100%;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
+    text-align: right;
+}
+.portfolio-entry2 .portfolio-text{
+    text-align: left;
 }
 .portfolio-text {
-    max-width:360px;
+    /* max-width:300px; */
 }
 .portfolio-text h1 {
-    max-width:90%;
+    max-width:100%;
+    margin:0;
+    padding:0;
+    border-bottom: 1px solid black;
+}
+iframe {
+    border-radius: 16px;
+}
+.centered-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap:6px;
+}
+.site-link {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    max-width:60px;
+    border: 1px solid black;
+    gap: 6px;
+}
+.portfolio-entry .centered-row {
+    justify-content: right;
 }
 .entry-img-button {
     width: 50%;
@@ -350,7 +387,7 @@ li {
     display:flex;
     flex:1;
     color: var(--secondary);
-    min-width:66%;
+    min-width:min-content;
     justify-self: center;
     align-self: center;
     flex-direction: column;
@@ -358,7 +395,6 @@ li {
     box-shadow: 0 12px 24px rgba(0,0,0,0.4);
     border-radius: 16px;
     overflow:hidden;
-    padding:16px;
 
     scrollbar-color: var(--light) var(--border);
     scrollbar-width: thick;
@@ -377,6 +413,7 @@ li {
     justify-items: center;
     align-self: center;
     gap:12px;
+    padding-right:16px;
 
     min-width:100%;
     transform-origin: top center;
@@ -405,7 +442,7 @@ li {
 .line, .blank-line {
     width:4px;
     background-color: var(--border);
-    height:60px;
+    height:30px;
     align-self: center;
     justify-self: center;
     z-index:900;
@@ -413,6 +450,11 @@ li {
 }
 .blank-line {
     background-color: var(--primary);
+}
+.timeline-shapes {
+    width:40px;
+    display:flex;
+    flex-direction: column;
 }
 .circle {
     width:25px;
@@ -422,6 +464,7 @@ li {
     border-radius: 50%;
     z-index: 1000;
     transition: .5s;
+    align-self: center;
 }
 .timeline-entry:hover .circle {
     width:40px;
@@ -429,7 +472,7 @@ li {
     transition: .5s;
 }
 .timeline-entry:hover .line, .timeline-entry:hover .blank-line {
-    height:53px;
+    height:23px;
     transition: .5s;
 }
 

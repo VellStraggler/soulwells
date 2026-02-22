@@ -21,7 +21,7 @@ function Timeline() {
             <TimelineEntry date="September 2020" title="Began my first semester at BYUI"/>
             <TimelineEntry date="September 2019" title="Introduced to Java"
                 subtitle="Kamiak High School"/>
-            <TimelineEntry date="July 2017" title="Made Tron Game in Scratch" index={1}/>
+            <TimelineEntry date="July 2017" title="Made multiplayer Tron Game in Scratch" index={1}/>
         </div>
     );
 }
@@ -37,7 +37,7 @@ function TimelineShape({n}) {
     }
     if(n > 0) {
         return(
-            <div className="timeline-shapes">
+        <div className="timeline-shapes">
             <div className="line"></div>
             <div className="circle"></div>
             <div className="blank-line"></div>

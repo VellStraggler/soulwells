@@ -19,7 +19,7 @@ function MobileApps() {
                 <ul>
                     <PortfolioEntry title="AI Filtering App"
                         link="https://youtube.com/embed/gf6aHkU72IE"
-                        description="Designed and implemented as part of my internship at DegaSolutions, LLC, which ended in December of 2025. Written in MudBlazor, HTML5, CSS, and C#"
+                        description="Designed and implemented as part of my internship at DegaSolutions, LLC, which ended in December of 2025. Written in MudBlazor, HTML5, CSS, and C#. Demonstrated ability to self-manage."
                         imgSrc="assets/clean_screen_app.png" 
                         github="https://github.com/speige/CleanScreen"
                         isVideo={true}/>
@@ -31,7 +31,7 @@ function MobileApps() {
                         isVideo={true} />
                     <PortfolioEntry title="Idle Tree App" 
                         link="https://www.youtube.com/embed/AOVAmD0bHUI"
-                        description="This app is a demonstration of Kotlin knowledge, displaying a tree that grows organically over time. I wrote this on a plane ride."
+                        description="This app is a demonstration of Kotlin knowledge, displaying a tree that grows organically over time. I wrote most of this on a plane ride. Utilizes delta time, binary tree hierarchy, and user touch input."
                         imgSrc="assets/tree_app.png" 
                         github="https://github.com/VellStraggler/tree"
                         isVideo={true}/>
