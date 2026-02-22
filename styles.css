@@ -8,6 +8,13 @@
 
 * {
     box-sizing: border-box;
+    font-size: small;
+}
+/* Two-column layout */
+.content {
+    display: grid;
+    grid-template-columns: 2fr .516fr;
+    gap: 32px;
 }
 .page {
     display: flex;
@@ -155,12 +162,6 @@ header {
     text-decoration: none;
 }
 
-/* Two-column layout */
-.content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 32px;
-}
 
 section {
     margin-bottom: 24px;
@@ -221,6 +222,7 @@ h3 {
     object-position: top;
 
 }
+
 
 .form-section {
     width: 66%;
