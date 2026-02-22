@@ -425,6 +425,7 @@ li {
     align-self: center;
     gap:12px;
     padding-right:16px;
+    background-color: var(--primary);
 
     min-width:100%;
     transform-origin: top center;
