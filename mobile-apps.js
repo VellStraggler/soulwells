@@ -12,7 +12,7 @@ function MobileApps() {
     return (
         <div className="contents">
             <div className="card">
-                <div className="header">
+                <div className="header-left">
                     <h1>Mobile Applications Portfolio</h1>
                     <p></p>
                 </div>

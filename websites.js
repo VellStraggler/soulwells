@@ -12,7 +12,7 @@ function Websites() {
     return (
         <div className="contents">
             <div className="card">
-                <div className="header">
+                <div className="header-left">
                     <h1>Website Portfolio</h1>
                     <p>Here are official websites I've made for clients, particularly small business owners. Each one was made to 100% satisfaction, exactly what they wanted and more.</p>
                 </div>
