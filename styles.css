@@ -13,7 +13,7 @@
 /* Two-column layout */
 .content {
     display: grid;
-    grid-template-columns: 2fr .516fr;
+    grid-template-columns: 2fr .75fr;
     gap: 32px;
 }
 .page {

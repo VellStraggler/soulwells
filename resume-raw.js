@@ -85,7 +85,7 @@ function Resume() {
                     description="Led team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
                 <SchoolProject link="https://github.com/elinorewickard/cse_final_project"
                     name="Team Leader –" linkName="Game: Wall of Fire" description="Led team of 3 to create a 3D side-scroller in Python. Ranked #1 for best graphics."/>
-                <SchoolProject name="Academic Highlight" description="Improved GPA while taking 20 credits."/>
+                <SchoolProject name="Academic Highlight" description="Improved GPA while taking 20 final credits."/>
               </ul>
               <div className="job-header">
                 <h3>Bloom Institute of Technology</h3>
@@ -96,7 +96,7 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project – ASCII-to-Image Markdown Renderer"
-                    description="AWS Lambda calls in Java for DDB uploads; frontend in JS."/>
+                    description="AWS Lambda calls in Java for DDB uploads; frontend in JS and HTML."/>
               </ul>
             </section>
             
@@ -109,20 +109,24 @@ function Resume() {
                   <div className="job-meta">Oct. 2024 – Present</div>
                 </div>
                 <ul>
-                  <li>Created websites for{" "}
-                    <a href="https://vellstraggler.github.io/Scripture-Creations">Scripture Creations</a>,{" "}
+                  <li>
+                    Engineered a serverless E-commerce site with auto-emailing, Braintree payment handling, and a backend using AWS Lambda, S3, API Gateway, and SES. Hosted on GitHub Pages as a responsive, componented React site and designed for security, maintainability, and efficiency. Made for the company  
+                    {" "}<a href="https://vellstraggler.github.io/Scripture-Creations">Scripture Creations</a>.
+                  </li>
+                  <li>Created simple websites for{" "}
                     <a href="https://edefying.com">Edefying</a>,{" "}
-                    <a href="https://tdl-construction.soulwells.us">TDL</a>, and{" "}
+                    <a href="https://tdl-construction.soulwells.us">TDL Construction</a>, and{" "}
                     <a href="https://daraluci.weebly.com/">Dara Luci</a>.
-                    Used React, Elementor, or Weebly.</li>
+                    Used React, Elementor, or Weebly.
+                  </li>
                 </ul>
               </div>
               <Job title="Participant, IBM Hackathon"
                    meta="Feb. 2026"
-                   descriptions={["Introduced to creating a workforce of agentic AI"]} />
+                   descriptions={["Introduced to creating a workforce of agentic AI using watsonx Orchestrate"]} />
               <Job title="Web Dev Intern, Degasolutions LLC"
                    meta="June 2025 – Dec. 2025"
-                   descriptions={["Developed 90% of UI for an Android/Desktop app using C#, MAUI, and MudBlazor."]} />
+                   descriptions={["Developed 90% of UI for a cross-platform mobile application using C#, MAUI, and MudBlazor."]} />
               <Job title="AI Tester, Outlier"
                    meta="Oct. 2023 – Aug. 2024"
                    descriptions={["Authored coding prompts and solutions to train AI models."]} />
@@ -137,7 +141,7 @@ function Resume() {
             <section className="skills">
               <h2>Skillset Overview</h2>
               <p><strong>Languages:</strong> Java, Python, C#, C++, JS, Dart, SQL, HTML, CSS, and Kotlin.</p>
-              <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, AWS Lambda, and AWS API Gateway.</p>
+              <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, AWS Lambda, VS, VS Code, Android Studio, and AWS API Gateway.</p>
               <p><strong>Skills:</strong> Leadership, independence, algorithmic problem-solving, debugging, and optimizing time-use and code.</p>
             </section>
             
