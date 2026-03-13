@@ -78,6 +78,8 @@ function Resume() {
               <div className="subheading">
                 Bachelor's Degree in Computer Science · GPA: 3.23
               </div>
+              <div>with an emphasis in Machine Learning (AI)</div>
+
               <ul>
                 <SchoolProject name="Senior Project –" link="https://www.youtube.com/watch?v=cRJ2EqHhD7Q" linkName="Physics-Based Music Visualizer"
                     description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and OpenGL."/>
