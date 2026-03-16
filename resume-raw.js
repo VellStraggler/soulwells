@@ -91,7 +91,7 @@ function Resume() {
               </ul>
               <div className="job-header">
                 <h3>Bloom Institute of Technology</h3>
-                <div className="job-meta">Sept. 2020 – Dec. 2025</div>
+                <div className="job-meta">Nov. 2022 – Oct. 2023</div>
               </div>
               <div className="subheading">
                 Certification in AWS Backend Development
@@ -113,7 +113,7 @@ function Resume() {
                 <ul>
                   <li>
                     Engineered a serverless E-commerce site with auto-emailing, Braintree payment handling, and a backend using AWS Lambda, S3, API Gateway, and SES. Hosted on GitHub Pages as a responsive, componented React site and designed for security, maintainability, and efficiency. Made for the company  
-                    {" "}<a href="https://vellstraggler.github.io/Scripture-Creations">Scripture Creations</a>.
+                    {" "}<a href="www.scripturecreations.com">Scripture Creations</a>.
                   </li>
                   <li>Created simple websites for{" "}
                     <a href="https://edefying.com">Edefying</a>,{" "}
