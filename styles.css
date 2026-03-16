@@ -172,6 +172,7 @@ header {
     font-size: 0.95rem;
     color: var(--secondary);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -181,6 +182,7 @@ header {
 
 .contact a {
     color: var(--accent);
+    flex:1;
     text-decoration: none;
 }
 
@@ -233,8 +235,10 @@ h3 {
 }
 .lighthouse-scores {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-self: center;
+    justify-content: center;
     gap: 16px;
     text-align: center;
 }
@@ -571,8 +575,7 @@ li {
 /* Footer spacing for print */
 @media print {
     body {
-    padding: 0;
-    background: #ffffff;
+        background: #ffffff;
     }
 
     .resume {
@@ -618,11 +621,10 @@ li {
         clip-path: none;
     }
     .resume-download:hover {
-        width:150px;
-        height:150px;
-        padding-left: 60px;
-        padding-bottom: 60px;
-        transition: 0.5s;
+        width:64px;
+        height:64px;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
     .content {
         display:flex;
@@ -641,5 +643,44 @@ li {
     }
     .form-section {
         width: 100%;
+    }
+    .timeline * {
+        font-size: small;
+    }
+    .card {
+        width: 100vw; 
+        gap:0;
+        margin: 15.6px;
+        border: 0;
+        justify-self: center;
+    }
+    ul {
+        margin:0;
+    }
+    .contents {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+    .portfolio-entry, .portfolio-entry2 {
+        width: 100%;
+        margin:0;
+        padding:0;
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid black;
+        justify-self: center;
+    }
+    .header-left {
+        width:100%;
+    }
+}
+@media (max-width:400px) {
+    * {
+        font-size: x-small;
+    }
+    .timeline * {
+        font-size: x-small;
     }
 }

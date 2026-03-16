@@ -76,15 +76,15 @@ function Resume() {
                 <div className="job-meta">Sept. 2020 – Dec. 2025</div>
               </div>
               <div className="subheading">
-                Bachelor's Degree in Computer Science · GPA: 3.23
+                Bachelor's Degree in Computer Science with an emphasis in Machine Learning · GPA: 3.23
               </div>
-              <div>with an emphasis in Machine Learning (AI)</div>
+              {/* <div className="subheading"> (AI)</div> */}
 
               <ul>
                 <SchoolProject name="Senior Project –" link="https://www.youtube.com/watch?v=cRJ2EqHhD7Q" linkName="Physics-Based Music Visualizer"
                     description="One-click audio-to-video generator with real-time playback. Written in C++ using GLFW and OpenGL."/>
                 <SchoolProject name="Team Leader –"linkName="Pie Agenda App" link="https://www.youtube.com/shorts/VlO8CpeSnMk"
-                    description="Led team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter."/>
+                    description="Led team of 8 in building an app for Android/iOS/Windows. Written in Dart using Flutter. Designed class system and UX/UI, delegated tasks, and kept us on schedule."/>
                 <SchoolProject link="https://github.com/elinorewickard/cse_final_project"
                     name="Team Leader –" linkName="Game: Wall of Fire" description="Led team of 3 to create a 3D side-scroller in Python. Ranked #1 for best graphics."/>
                 <SchoolProject name="Academic Highlight" description="Improved GPA while taking 20 final credits."/>
@@ -98,7 +98,7 @@ function Resume() {
               </div>
               <ul>
                 <SchoolProject name="Senior Project – ASCII-to-Image Markdown Renderer"
-                    description="AWS Lambda calls in Java for DDB uploads; frontend in JS and HTML."/>
+                    description="AWS Lambda calls in Java for DDB uploads of rendered images; frontend in JS and HTML."/>
               </ul>
             </section>
             
@@ -125,7 +125,7 @@ function Resume() {
               </div>
               <Job title="Participant, IBM Hackathon"
                    meta="Feb. 2026"
-                   descriptions={["Introduced to creating a workforce of agentic AI using watsonx Orchestrate"]} />
+                   descriptions={["Introduced to creating a workforce of agentic AI using watsonx Orchestrate. AI Pipeline designed to update Python or JS code projects to latest compatible dependencies."]} />
               <Job title="Web Dev Intern, Degasolutions LLC"
                    meta="June 2025 – Dec. 2025"
                    descriptions={["Developed 90% of UI for a cross-platform mobile application using C#, MAUI, and MudBlazor."]} />
