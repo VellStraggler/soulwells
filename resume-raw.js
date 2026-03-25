@@ -125,7 +125,7 @@ function Resume() {
               </div>
               <Job title="Participant, IBM Hackathon"
                    meta="Feb. 2026"
-                   descriptions={["Introduced to creating a workforce of agentic AI using watsonx Orchestrate. AI Pipeline designed to update Python or JS code projects to latest compatible dependencies."]} />
+                   descriptions={["Introduced to creating a workforce of agentic AI using watsonx Orchestrate. Produced pipeline which automatically updates Python or JS code projects to latest compatible dependencies."]} />
               <Job title="Web Dev Intern, Degasolutions LLC"
                    meta="June 2025 – Dec. 2025"
                    descriptions={["Developed 90% of UI for a cross-platform mobile application using C#, MAUI, and MudBlazor."]} />
@@ -142,7 +142,7 @@ function Resume() {
           <div>
             <section className="skills">
               <h2>Skillset Overview</h2>
-              <p><strong>Languages:</strong> Java, Python, C#, C++, JS, Dart, SQL, HTML, CSS, and Kotlin.</p>
+              <p><strong>Languages:</strong> Java, Python, C#, C++, C, JS, Dart, SQL, HTML, CSS, and Kotlin.</p>
               <p><strong>Frameworks & Tools:</strong> REST APIs, HTTP, Docker, React, Flutter, .NET, GitHub, WordPress, Nginx, AWS Lambda, VS, VS Code, Android Studio, and AWS API Gateway.</p>
               <p><strong>Skills:</strong> Leadership, independence, algorithmic problem-solving, debugging, and optimizing time-use and code.</p>
             </section>
@@ -150,8 +150,10 @@ function Resume() {
             <section>
               <h2>Personal Projects</h2>
               <ul>
+                <Project name="TCP Data Saver: C / Android Integration"
+                    description="Developed a C-based TCP server that receives URL requests from Android app clients and returns clean, and minimal HTML page for in-app rendering."/>
                 <Project name="Custom Text Art Game Engine" link="https://github.com/VellStraggler/text-game-engine"
-                    description="Use of OOP principles, file I/O, UX design, built-in map chunking, collision detection, etc. 3,000 lines of Python running at 1,000 FPS."/>
+                    description="Use of OOP principles, file I/O, UX design for internal sprite and map applications, built-in map chunking, collision detection, etc. 3,000 lines of Python running at 1,000 FPS."/>
                 <Project name="Minecraft AI Bot" link="https://github.com/VellStraggler/MinecraftBot"
                     description="Automates gameplay using video input. Written in Java and prototyped in Python with image-to-text processing."/>
                 <Project name="3D Voxel Simulation" link="https://www.youtube.com/watch?v=TpZ2NpVWoKY"
