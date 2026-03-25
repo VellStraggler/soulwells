@@ -1,9 +1,9 @@
 :root {
-    --primary: #1A1488;
-    --primary-light: #1A1488;
+    --primary: #2B233C;
+    --primary-light: #8B6173;
     --secondary: #FFFFFF;
     --accent: #6e2fc1;
-    --light: #2596C0;
+    --light: #2862be;
     --border: #0c0944;
 }
 
@@ -31,7 +31,9 @@ body {
     padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--primary);
-    background: linear-gradient(90deg, var(--primary) calc(50% - 600px), var(--secondary), var(--primary) calc(50% + 600px));
+    /* background: linear-gradient(90deg, var(--primary) calc(50% - 600px), var(--secondary), var(--primary) calc(50% + 600px)); */
+    background-image: url("assets/tile-soulwells2.png");
+    background-repeat: repeat;
     line-height: 1.5;
 }
 footer {

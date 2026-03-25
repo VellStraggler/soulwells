@@ -21,7 +21,7 @@ function Websites() {
         <div className="contents">
             <div className="card">
                 <div className="header-left">
-                    <h1>Website Portfolio</h1>
+                    <h1>Website Portfolio - Clients</h1>
                     <p>Here are official websites I've made for clients, particularly small business owners. Each one was made to 100% satisfaction, exactly what they wanted and more.</p>
                 </div>
                 <ul>
@@ -51,6 +51,10 @@ function Websites() {
                         dates="January 2025"
                         imgSrc="assets/daraluci_preview.png" link="https://daraluci.weebly.com/"/>
                 </ul>
+                <div className="header-left">
+                    <h1>Website Portfolio - Personal Projects</h1>
+                    <p>These are non-business websites I've worked on which nonetheless increased my understanding of website building.</p>
+                </div>
             </div>
         </div>
     );
